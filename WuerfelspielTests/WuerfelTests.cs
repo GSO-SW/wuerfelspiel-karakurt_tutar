@@ -17,6 +17,7 @@ namespace WuerfelspielTests
 
             // assert
             Assert.AreEqual(wuerfel.AnzahlSeiten, anzahlSeitenErgebnis);
+            // test commit (samet)
         }
     }
 }
