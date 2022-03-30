@@ -1,37 +1,22 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Wuerfelspiel;
+using System;
 
 namespace WuerfelspielTests
 {
     [TestClass]
     public class WuerfelTests
     {
-        [TestMethod]
-        public void Wuerfel_KonstruktorTest()
+        public void Wuerfel_KonstruktorWerteTest()
         {
-            //Arrange
-            int anzahlSeiten = 6;
-            Wuerfel w = new Wuerfel(anzahlSeiten);
-            //Act
-          
-            //Assert
-            Assert.AreEqual(6, w.anzahlSeiten)
-                //push test
-        }
-        [TestMethod]
-        public void LetztesErgebnisTest()
-        {
-            //Arrange
+            // arrange
+            Wuerfel wuerfel = new Wuerfel(6);
+            int anzahlSeitenErgebnis = 6;
 
-            //Act
+            // act
 
-            //Assert
-        }
-        [TestMethod]
-        public void SicherungUmschaltenTest()
-        {
-
+            // assert
+            Assert.AreEqual(wuerfel.AnzahlSeiten, anzahlSeitenErgebnis);
         }
     }
 }
