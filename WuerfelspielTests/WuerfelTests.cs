@@ -1,6 +1,6 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Wuerfelspiel;
+using System;
 
 namespace WuerfelspielTests
 {
@@ -8,11 +8,16 @@ namespace WuerfelspielTests
     public class WuerfelTests
     {
         [TestMethod]
-        public void DummyTest()
+        public void Wuerfel_KonstruktorWerteTest()
         {
-            // Dieser Test ist hier, um eine GitHub-Funktion zu testen. 
-            // Einfach löschen :)
-            Assert.IsTrue(true);// is tatsächlich true :O
+            // arrange
+            Wuerfel wuerfel = new Wuerfel(6);
+            int anzahlSeitenErgebnis = 6;
+
+            // act
+
+            // assert
+            Assert.AreEqual(wuerfel.AnzahlSeiten, anzahlSeitenErgebnis);
         }
     }
 }
