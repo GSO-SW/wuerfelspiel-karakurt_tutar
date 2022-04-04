@@ -6,10 +6,6 @@ namespace Wuerfelspiel
     {
         private int anzahlSeiten;
 
-        public Wuerfel()
-        {
-        }
-
         public Wuerfel(int anzahlSeiten)
         {
             this.anzahlSeiten = anzahlSeiten;

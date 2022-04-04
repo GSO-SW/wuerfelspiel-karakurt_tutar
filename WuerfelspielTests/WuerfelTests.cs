@@ -11,10 +11,11 @@ namespace WuerfelspielTests
         public void Wuerfel_KonstruktorWerteTest()
         {
             // arrange
-            Wuerfel wuerfel = new Wuerfel(6);
+            int anzahlSeitenTest = 6;
             int anzahlSeitenErgebnis = 6;
 
             // act
+            Wuerfel wuerfel = new Wuerfel(anzahlSeitenTest);
 
             // assert
             Assert.AreEqual(wuerfel.AnzahlSeiten, anzahlSeitenErgebnis);
