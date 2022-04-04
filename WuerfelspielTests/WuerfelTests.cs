@@ -7,7 +7,6 @@ namespace WuerfelspielTests
     [TestClass]
     public class WuerfelTests
     {
-        [TestMethod]
         public void Wuerfel_KonstruktorWerteTest()
         {
             // arrange
@@ -19,6 +18,7 @@ namespace WuerfelspielTests
 
             // assert
             Assert.AreEqual(wuerfel.AnzahlSeiten, anzahlSeitenErgebnis);
+            // test commit (samet)
         }
     }
 }
